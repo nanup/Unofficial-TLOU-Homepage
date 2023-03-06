@@ -111,3 +111,20 @@ body {
   background-color: #fff;
   color: #592F16
 }
+
+.btn-animated {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
