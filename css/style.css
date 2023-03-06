@@ -42,14 +42,45 @@ body {
 .heading-primary {
   font-family: "Bebas Neue";
   color: #fff;
+  backface-visibility: hidden;
 }
 
 .heading-primary-main {
   display: block;
   font-size: 80px;
+  animation-name: moveInTtB;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-out;
 }
 
 .heading-primary-sub {
   display: block;
   font-size: 25px;
+  animation-name: moveInBtT;
+  animation-duration: 1000ms;
+  animation-timing-function: ease-out;
+}
+
+@keyframes moveInTtB {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBtT {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
