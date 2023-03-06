@@ -1,16 +1,22 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html {
+  font-size: 62.5%;
 }
 
 body {
+  box-sizing: border-box;
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.7;
   color: #777;
-  padding: 1em;
+  padding: 1rem;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 .header {
@@ -24,12 +30,12 @@ body {
 
 .logo-box {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 4rem;
+  left: .4rem;
 }
 
 .logo {
-  height: 100px
+  height: 10rem
 }
 
 .text-box {
@@ -44,12 +50,12 @@ body {
   font-family: "Bebas Neue";
   color: #fff;
   backface-visibility: hidden;
-  margin-bottom: 60px;
+  margin-bottom: .6rem;
 }
 
 .heading-primary-main {
   display: block;
-  font-size: 80px;
+  font-size: 8rem;
   animation-name: moveInTtB;
   animation-duration: 1000ms;
   animation-timing-function: ease-out;
@@ -57,7 +63,8 @@ body {
 
 .heading-primary-sub {
   display: block;
-  font-size: 25px;
+  font-family: "Lato", sans-serif;
+  font-size: 2.5rem;
   animation-name: moveInBtT;
   animation-duration: 1000ms;
   animation-timing-function: ease-out;
@@ -66,7 +73,7 @@ body {
 @keyframes moveInTtB {
   0% {
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(-.5rem);
   }
 
   100% {
@@ -78,7 +85,7 @@ body {
 @keyframes moveInBtT {
   0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(.5rem);
   }
 
   100% {
@@ -92,19 +99,19 @@ body {
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 15px 40px;
-  border-radius: 100px;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
   transition: all .2s;
 }
 
 .btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 10px #f2dfbb38;
+  transform: translateY(-.2rem);
+  box-shadow: 0 .5rem .1rem #f2dfbb38;
 }
 
 .btn:active {
   transform: translateY(0);
-  box-shadow: 0 2px 5px #f2dfbb38;
+  box-shadow: 0 .2rem .5rem #f2dfbb38;
 }
 
 .btn-white {
