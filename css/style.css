@@ -33,6 +33,7 @@ body {
 }
 
 .text-box {
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -43,6 +44,7 @@ body {
   font-family: "Bebas Neue";
   color: #fff;
   backface-visibility: hidden;
+  margin-bottom: 60px;
 }
 
 .heading-primary-main {
@@ -83,4 +85,29 @@ body {
     opacity: 1;
     transform: translate(0);
   }
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 100px;
+  transition: all .2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px #f2dfbb38;
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px #f2dfbb38;
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #592F16
 }
